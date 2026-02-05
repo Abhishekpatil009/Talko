@@ -9,7 +9,7 @@ const io = new Server(httpserver, {
   cors: {
     origin: [
       "http://localhost:3000",
-      "https://talko-yeo6.onrender.com",
+      "https://talko-orcin.vercel.app",
     ],
     credentials: true,
   },
