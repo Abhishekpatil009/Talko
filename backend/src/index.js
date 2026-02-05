@@ -10,11 +10,18 @@ import { io, app, httpserver } from './lib/socket.js';
 
 dotenv.config();
 
+
+
+
 app.use(cookieParser());
 app.use(cors({
-    origin: 'http://localhost:3000',
-    credentials: true,
+  origin: [
+    "http://localhost:3000",
+    "https://talko-yeo6.onrender.com"
+  ],
+  credentials: true,
 }));
+
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ limit: '10mb', extended: true }));
 app.use("/api/auth", authRoutes);
