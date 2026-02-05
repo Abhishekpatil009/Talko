@@ -14,7 +14,7 @@ dotenv.config();
 const corsOptions = {
   origin: [
     "http://localhost:3000",
-    "https://talko-nu.vercel.app"
+    "https://talko-orcin.vercel.app"
   ],
   credentials: true,
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
