@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { userAuthStore } from "../store/userAuthStore";
-import { Navigate } from "react-router-dom";
 import "./LoginPage.css"; 
 import toast from "react-hot-toast";
 
